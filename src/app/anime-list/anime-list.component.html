@@ -1,0 +1,25 @@
+<h2> Anime List </h2>
+<div class="table-container">
+    <table class="table table-stripped custom-table">
+        <thead>
+            <tr>
+                <th> Title </th>
+                <th> Episodes </th>
+                <th> Date of Release </th>
+                <th> Actions </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let anime of animeList">
+                <td>{{ anime.title }}</td>
+                <td>{{ anime.episodes }}</td>
+                <td>{{ anime.dateOfRelease }}</td>
+                <td>
+                    <button (click) = "updateAnime(anime.id)" class="btn btn-info"> Update </button>
+                    <button (click) = "deleteAnime(anime.id)" class="btn btn-danger" style="margin-left: 10px;"> Delete </button>
+                    <button (click) = "animeDetails(anime.id)" class="btn btn-info" style="margin-left: 10px;"> View </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

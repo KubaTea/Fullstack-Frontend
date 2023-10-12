@@ -1,0 +1,24 @@
+<div class="col-md-6 offset-md-3">
+<h3> Create Anime </h3>
+<form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" class="form-control" id="title" 
+            [(ngModel)]="anime.title" name="title" required>
+    </div>
+
+    <div class="form-group">
+        <label for="episodes">Episodes:</label>
+        <input type="number" class="form-control" id="episodes" 
+            [(ngModel)]="anime.episodes" name="episodes" required>
+    </div>
+
+    <div class="form-group">
+        <label for="dateOfRelease">Date of Release:</label>
+        <input type="text" class="form-control" id="dateOfRelease" 
+            [(ngModel)]="anime.dateOfRelease" name="dateOfRelease" required>
+    </div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+</form>
+</div>

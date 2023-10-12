@@ -1,0 +1,33 @@
+.table-container {
+    max-height: 450px; /* Set a max height for the container to enable scrolling */
+    overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+    border: 1px solid #ddd; /* Add a border around the container, not the table */
+    margin: 10px;
+  }
+  
+  .custom-table {
+    width: 100%; /* Optional: Make the table expand to the full width of the container */
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 8px; /* Add padding to cells for spacing */
+    border: 1px solid #ddd; /* Add borders to cells */
+  }
+  
+  /* Styling the header row */
+  .custom-table th {
+    background-color: #f5f5f5; /* Light gray background color */
+    font-weight: bold; /* Bold text for header cells */
+  }
+  
+  /* Styling even rows (striped rows) */
+  .custom-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Lighter gray background color */
+  }
+  
+  /* Styling hover effect for rows */
+  .custom-table tbody tr:hover {
+    background-color: #ddd; /* Slightly darker gray on hover */
+  }
+  
